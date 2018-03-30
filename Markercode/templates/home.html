@@ -1,0 +1,32 @@
+{%extends 'layout.html' %}
+
+{% block body %}
+
+
+<div class="container-fluid ">
+<div class="row">
+  <div class="col" style="background-color:#E6E6E6; width: 50%; height: 728px;">
+<div class="continer">
+    <div class="custom-file "  id="customFile" lang="es">
+
+      <form class="md-form mr-md-10 pt-6 px-3 pt-md-5 px-md-10">
+        <div class="my-5 py-3">
+          <label class="btn btn-primary" for="my-file-selector">
+           <input id="my-file-selector" type="file" style="display:none"
+            onchange="$('#upload-file-info').html(this.files[0].name)">
+            Upload File
+           </label>
+          <span class='label label-info' id="upload-file-info"></span>
+        </div>
+      </form>
+
+     </div>
+   </div>
+  </div>
+  <div class="col" style="background-color:#4C4C4C; width: 50%; height: 728px;">
+  </div>
+</div>
+</div>
+
+
+{% endblock %}
